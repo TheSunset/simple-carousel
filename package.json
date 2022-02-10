@@ -1,6 +1,6 @@
 {
   "name": "@ximu/simple-carousel",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://TheSunset.github.io/simple-carousel",
   "description": "a react component of carousel",
   "main": "./dist/index.js",
