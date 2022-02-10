@@ -1,6 +1,7 @@
 {
   "name": "@ximu/simple-carousel",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "homepage": "https://TheSunset.github.io/simple-carousel",
   "description": "a react component of carousel",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
@@ -17,14 +18,20 @@
     "build:tsc-cjs": "tsc -b tsconfig.cjs.json",
     "build:tsc-esm": "tsc -b tsconfig.esm.json",
     "start": "webpack-dev-server --mode development",
+    "build:demo": "webpack --mode production --progress",
     "build:sass": "sass src/:lib/",
     "clean": "rm -rf lib && mkdir lib",
     "lib": "yarn run clean && babel src --out-dir lib --copy-files",
     "build:final": "rm -rf dist && mkdir dist && rollup -c",
-    "build:final-tsc": "tsc"
+    "build:final-tsc": "tsc",
+    "deploy": "gh-pages -d examples/dist"
   },
   "author": "snow_sunset",
   "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
     "@babel/core": "^7.17.2",
@@ -46,6 +53,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^6.6.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -72,5 +80,9 @@
   },
   "dependencies": {
     "styled-components": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheSunset/simple-carousel"
   }
 }

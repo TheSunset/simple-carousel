@@ -6,7 +6,6 @@ import { render } from "react-dom";
 import "../dist/index.css"
 // const MyComponent = require("../dist/Carousel.js");
 import MyComponent from "../dist/index.esm"
-console.log(MyComponent);
 // import MyComponent from "../lib/cjs/Carousel.js";
 
 const airpods = require("./assets/airpods.png").default;
